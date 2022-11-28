@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="537dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_obs_agenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="150dp"
+                android:text="Nao"
+                app:layout_constraintStart_toEndOf="@+id/tv_obs_agenda"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_nomepet_agenda3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nome Pet"
+                app:layout_constraintBottom_toTopOf="@+id/tv_hospedagem_agenda2"
+                app:layout_constraintStart_toEndOf="@+id/tv_nomepet_agenda" />
+
+            <TextView
+                android:id="@+id/tv_hospedagem_agenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nao"
+                app:layout_constraintBottom_toTopOf="@+id/tv_spa_agenda2"
+                app:layout_constraintStart_toEndOf="@+id/tv_hospedagem_agenda" />
+
+            <TextView
+                android:id="@+id/tv_spa_agenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Nao"
+                app:layout_constraintBottom_toTopOf="@+id/tv_banhotosa_agenda2"
+                app:layout_constraintStart_toEndOf="@+id/tv_spa_agenda" />
+
+            <TextView
+                android:id="@+id/tv_banhotosa_agenda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Sim"
+                app:layout_constraintBottom_toTopOf="@+id/tv_obs_agenda2"
+                app:layout_constraintStart_toEndOf="@+id/tv_banhotosa_agenda" />
+
+            <TextView
+                android:id="@+id/tv_nomepet_agenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Nome do Pet:"
+                app:layout_constraintBottom_toTopOf="@+id/tv_hospedagem_agenda"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_hospedagem_agenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Hospedagem:"
+                app:layout_constraintBottom_toTopOf="@+id/tv_spa_agenda"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_spa_agenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Spa:"
+                app:layout_constraintBottom_toTopOf="@+id/tv_banhotosa_agenda"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_banhotosa_agenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Banho e tosa:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_spa_agenda2" />
+
+            <TextView
+                android:id="@+id/tv_obs_agenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Observações:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_banhotosa_agenda" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

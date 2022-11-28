@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3E3"
+    tools:context=".InicialActivity">
+
+    <TextView
+        android:id="@+id/tv_cabecalho_meu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meu"
+        android:textColor="#60C0B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/tv_cabecalho_pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet"
+        android:textColor="#E161CD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewinicial"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_petshopnome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Petshop A"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_nvendas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="N° de vendas: 54 vendas"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_endereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Endenreço: Rua teste, 100 - Oficinas"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_avancar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="143dp"
+                android:onClick="abrirAgendar"
+
+                android:text="Avançar" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
